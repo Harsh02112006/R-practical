@@ -1,0 +1,5 @@
+x <- c(65, 66, 67, 67, 68, 69, 71, 73)
+y <- c(67, 69, 64, 68, 72, 70, 68, 70)
+plot(x, y, xlab="height of mother", ylab="height of daughter", main="Scatter diagram")
+c <- cor(x, y)
+cat("Correlation coefficient = ", c, "\n")

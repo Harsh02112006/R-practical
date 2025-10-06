@@ -1,0 +1,11 @@
+a <- c(3, 9, 10, 1, 8, 5, 1, 5, 5, 4)
+b <- c(1, 7, 9, 2, 10, 8, 3, 5, 4, 5)
+n <- length(a)
+d <- rank(a) - rank(b)
+d2 <- d^2
+dsum <- sum(d2)
+m <- c(2, 3, 2)
+mf <- (m^3-m)
+msum <- sum(mf)
+r = 1 - (6 * (dsum + (msum / 12))) / (n * (n^2 - 1))
+cat("R is ", r, "\n")

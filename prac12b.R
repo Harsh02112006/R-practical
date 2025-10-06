@@ -1,0 +1,5 @@
+x <- c(40, 45, 52, 60, 58, 60, 65, 68, 70, 55)
+y <- c(12, 14, 15, 20, 19, 22, 24, 15, 28, 18)
+plot(x, y, xlab="sales", ylab="expenses", main="Scatter diagram")
+c <- cor(x, y)
+cat("Correlation coefficient = ", c, "\n")
