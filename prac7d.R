@@ -1,0 +1,13 @@
+lb = seq(0,80,20)
+ub = seq(20,100,20)
+h = 20
+f = c(10,18,25,30,22)
+n = sum(f)
+cf = cumsum(f)
+qc3 = min(which(cf >= (n*3)/4))
+q3 = lb[qc3] + ((h*((n*3)/4) - cf[qc3-1])/f[qc3])
+dc4 = min(which(cf >= (n*4)/10))
+d4 = lb[dc4] + ((h*((n*4)/10) - cf[dc4-1])/f[dc4])
+pc52 = min(which(cf >= (n*52)/100))
+p52 = lb[pc52] + ((h*((n*52)/100) - cf[pc52-1])/f[pc52])
+cat("Q3:",q3,"\nD4:",d4,"\nP52:",p52)

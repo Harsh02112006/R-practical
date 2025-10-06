@@ -1,0 +1,11 @@
+lb = seq(100,500,100)
+ub = seq(200,600,100)
+h = 100
+f= c(11,13,25,27,18)
+n = sum(f)
+cf = cumsum(f)
+dc3 = min(which(cf >= (n*3)/10))
+d3 = lb[dc3] + ((h*((n*3)/10) - cf[dc3-1])/f[dc3])
+pc37 = min(which(cf >= (n*37)/100))
+p42 = lb[pc37] + ((h*((n*37)/100) - cf[pc37-1])/f[pc37])
+cat("D3:",d3,"\nP42:",p42)
