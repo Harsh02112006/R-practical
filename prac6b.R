@@ -1,0 +1,6 @@
+x=seq(1,10,1)
+f=c(7,11,10,8,7,5,4,3,2,1)
+y = rep(x,f)
+mean = mean(y)
+q3 = quantile(y,0.75)
+cat("Mean:",mean,"\nQ3:",q3)

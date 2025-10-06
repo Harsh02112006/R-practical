@@ -1,0 +1,8 @@
+x=c(120,115,130,140,180,210,180,120,130,150,100,190,200,160,150,160,190,200,172,152)
+mean = mean(x)
+median = median(x)
+q1 = quantile(x,0.25)
+q3 = quantile(x,0.75)
+d3 = quantile(x,0.3)
+p42 = quantile(x,0.42)
+cat("Mean:",mean,"\nMedian:",median,"\nQ1:",q1,"\nQ3:",q3,"\nD3:",d3,"\nP42:",p42)
